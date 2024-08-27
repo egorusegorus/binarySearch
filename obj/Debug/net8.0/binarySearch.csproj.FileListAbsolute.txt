@@ -1,0 +1,15 @@
+/home/tomasz/C#/binarySearch/bin/Debug/net8.0/binarySearch
+/home/tomasz/C#/binarySearch/bin/Debug/net8.0/binarySearch.deps.json
+/home/tomasz/C#/binarySearch/bin/Debug/net8.0/binarySearch.runtimeconfig.json
+/home/tomasz/C#/binarySearch/bin/Debug/net8.0/binarySearch.dll
+/home/tomasz/C#/binarySearch/bin/Debug/net8.0/binarySearch.pdb
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/binarySearch.GeneratedMSBuildEditorConfig.editorconfig
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/binarySearch.AssemblyInfoInputs.cache
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/binarySearch.AssemblyInfo.cs
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/binarySearch.csproj.CoreCompileInputs.cache
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/binarySearch.sourcelink.json
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/binarySearch.dll
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/refint/binarySearch.dll
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/binarySearch.pdb
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/binarySearch.genruntimeconfig.cache
+/home/tomasz/C#/binarySearch/obj/Debug/net8.0/ref/binarySearch.dll
