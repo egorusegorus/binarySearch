@@ -62,7 +62,7 @@ class Program
         int meineZahl= random.Next(0, 100);
         int controlZahl=-1;
         Console.Clear();
-        Console.WriteLine("Ok, ich habe eine Zahl.");
+        Console.WriteLine("Ok, ich habe eine Zahl ausgedacht.");
         Console.WriteLine("Jetzt raten Sie mal, welche Zahl ich mir ausgedacht habe.");
         string? controlZahlString=Console.ReadLine();
         controlZahl= Convert.ToInt32(controlZahlString);
@@ -71,13 +71,13 @@ class Program
         }else{
             while(controlZahl != meineZahl){
                 if  (controlZahl > meineZahl){
-                    Console.WriteLine("Meine zahl ist kleiner. Was ist meine Zahl?");
+                    Console.WriteLine("Meine zahl ist kleiner. Welche Zahl ist meine?");
                     controlZahlString=Console.ReadLine();
                     controlZahl= Convert.ToInt32(controlZahlString);
                 }
                 else if (controlZahl < meineZahl)
                 {
-                    Console.WriteLine("Meine zahl ist großer. Was ist meine Zahl?");
+                    Console.WriteLine("Meine Zahl ist größer. Welche Zahl ist meine?");
                     controlZahlString=Console.ReadLine();
                     controlZahl= Convert.ToInt32(controlZahlString);
                 } 
