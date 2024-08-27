@@ -14,7 +14,7 @@ class Program
         while ((wahl < 0) || (wahl > 2)) {
             Console.WriteLine("Wer rät?");
             Console.WriteLine("0. Ich.");
-            Console.WriteLine("1. Du.");
+            Console.WriteLine("1. Sie.");
             Console.WriteLine("2. Ausgang.");
             string? str = Console.ReadLine();
 
@@ -45,18 +45,56 @@ class Program
         bool werspielt = menu(); 
     
         if (werspielt) {
-            // hier ich
-        } else {
             Console.Clear();
             Console.WriteLine("Bitte denken Sie an eine Zahl zwischen 0 und 99 und behalten Sie sie im Kopf.");
             Console.ReadLine();
             Console.WriteLine("Drücken Sie bitte die Taste 'G', wenn Ihre Zahl größer ist, und die Taste 'K', wenn sie kleiner ist.");
             Console.WriteLine("Wenn ich die Zahl erraten habe, drücken Sie bitte !");
+        } else {
+            
+            ich();
         }
         derZahl();
     }
 
-    
+    public static void ich(){
+        Random random= new Random();
+        int meineZahl= random.Next(0, 100);
+        int controlZahl=-1;
+        Console.Clear();
+        Console.WriteLine("Ok, ich habe eine Zahl.");
+        Console.WriteLine("Jetzt raten Sie mal, welche Zahl ich mir ausgedacht habe.");
+        string? controlZahlString=Console.ReadLine();
+        controlZahl= Convert.ToInt32(controlZahlString);
+        if (controlZahl == meineZahl) {
+            Console.WriteLine("Bravo!!! "+meineZahl+ " ist die richtige Zahl!");
+        }else{
+            while(controlZahl != meineZahl){
+                if  (controlZahl > meineZahl){
+                    Console.WriteLine("Meine zahl ist kleiner. Was ist meine Zahl?");
+                    controlZahlString=Console.ReadLine();
+                    controlZahl= Convert.ToInt32(controlZahlString);
+                }
+                else if (controlZahl < meineZahl)
+                {
+                    Console.WriteLine("Meine zahl ist großer. Was ist meine Zahl?");
+                    controlZahlString=Console.ReadLine();
+                    controlZahl= Convert.ToInt32(controlZahlString);
+                } 
+                if (controlZahl==meineZahl){
+                    Console.WriteLine("Bravo, das ist die Zahl!");
+                    Console.ReadLine();
+
+                    
+                }
+                
+            
+            }
+            wer();
+        }
+        Console.WriteLine("");
+    }
+
     public static void derZahl(){
         int low = 0;
         int high = 99;
