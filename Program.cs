@@ -56,7 +56,8 @@ class Program
         derZahl();
     }
 
-    public static int derZahl(){
+    
+    public static void derZahl(){
         int low = 0;
         int high = 99;
         int mid;
@@ -80,6 +81,6 @@ class Program
                 break;
             }
         }
-        return 0;
+        wer();
     }
 }
